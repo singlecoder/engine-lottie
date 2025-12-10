@@ -6,9 +6,10 @@ import { TypeTextKeyframe } from "../LottieResource";
  * @internal
  */
 export default class TextLottieElement extends BaseLottieElement {
-  constructor(layer, engine?: Engine, entity?: Entity, name?: string) {
+  constructor(layer, engine?: Engine, entity?: Entity) {
     super(layer);
 
+    const name = layer.nm || "";
     if (entity) {
       this.entity = entity;
       if (name) {

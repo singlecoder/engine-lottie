@@ -217,7 +217,7 @@ export class LottieAnimation extends Script {
 
       switch (layer.ty) {
         case 0:
-          element = new CompLottieElement(layer, this.engine, childEntity, layer.id);
+          element = new CompLottieElement(layer, this.engine, childEntity);
           break;
 
         case 2:
@@ -230,12 +230,12 @@ export class LottieAnimation extends Script {
             layer.ks.o.k = 100;
           }
 
-          element = new CompLottieElement(layer, this.engine, childEntity, layer.id);
+          element = new CompLottieElement(layer, this.engine, childEntity);
 
           break;
 
         case 5:
-          element = new TextLottieElement(layer, this.engine, childEntity, layer.id);
+          element = new TextLottieElement(layer, this.engine, childEntity);
 
           break;
       }
